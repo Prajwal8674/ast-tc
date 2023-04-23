@@ -483,6 +483,10 @@ h6,
     background-size: cover;
 }
 
+.bgs {
+    background: #350035;
+}
+
 
 .bg-header-2 {
     background: linear-gradient(rgba(51, 26, 67, 0.7), rgba(44, 20, 102, 0.7)), url(../img/lapi.jpeg) center center no-repeat;
