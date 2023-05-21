@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.column {   
+  height: 100vh;
+  width: 100%;
+  max-width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.column-header {
+  padding: 20px;
+  background-color: #111;
+}
+
+.column-header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.column-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.column-content .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.column-menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.column-item {
+  margin-bottom: 10px;
+}
+
+.column-item a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.column-item a:hover {
+  background-color: #555;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #222;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="column">
+  <div class="column-header">
+    <h1>Admin</h1>
+  </div>
+  <div class="column-content">
+    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+  <ul class="column-menu">
+    <li class="column-item">
+      <a href="#">Home</a>
+    </li>
+    <li class="column-item dropdown">
+      <a href="#">Student</a>
+      <div class="dropdown-content">
+        <a href="Addstd.html">Add</a>
+        <a href="#">Update</a>
+        <a href="#">Delete</a>
+      </div>
+    </li>
+    <li class="column-item dropdown">
+      <a href="#">Certificates</a>
+      <div class="dropdown-content">
+        <a href="#">Show All</a>
+        <a href="#">Salary</a>
+      </div>
+    </li>
+    <li class="column-item dropdown">
+      <a href="#">Fees/Payments</a>
+      <div class="dropdown-content">
+        <a href="#">Add</a>
+        <a href="#">Update</a>
+        <a href="#">Delete</a>
+      </div>
+    </li>
+    <li class="column-item dropdown">
+      <a href="#">Job Call</a>
+      <div class="dropdown-content">
+        <a href="#">Add Job</a>
+        <a href="#">Update</a>
+        <a href="#">Delete</a>
+      </div>
+    </li>
+    <li class="column-item dropdown">
+      <a href="#">Internship</a>
+      <div class="dropdown-content">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
