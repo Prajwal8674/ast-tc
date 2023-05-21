@@ -1,0 +1,322 @@
+<picture>
+<img
+sizes="(max-width: 800px) 100vw, 800px"
+srcset="
+about_vvrgsy_c_scale,w_200.webp 200w,
+about_vvrgsy_c_scale,w_592.webp 592w,
+about_vvrgsy_c_scale,w_800.webp 800w"
+src="about_vvrgsy_c_scale,w_800.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 500px) 100vw, 500px"
+srcset="
+blog-1_twoeaq_c_scale,w_200.webp 200w,
+blog-1_twoeaq_c_scale,w_500.webp 500w"
+src="blog-1_twoeaq_c_scale,w_500.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 500px) 100vw, 500px"
+srcset="
+blog-2_shdkug_c_scale,w_200.webp 200w,
+blog-2_shdkug_c_scale,w_500.webp 500w"
+src="blog-2_shdkug_c_scale,w_500.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 500px) 100vw, 500px"
+srcset="
+blog-3_g7ox9z_c_scale,w_200.webp 200w,
+blog-3_g7ox9z_c_scale,w_500.webp 500w"
+src="blog-3_g7ox9z_c_scale,w_500.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+carousel-1_qyycsx_c_scale,w_200.webp 200w,
+carousel-1_qyycsx_c_scale,w_637.webp 637w,
+carousel-1_qyycsx_c_scale,w_932.webp 932w,
+carousel-1_qyycsx_c_scale,w_1346.webp 1346w,
+carousel-1_qyycsx_c_scale,w_1400.webp 1400w"
+src="carousel-1_qyycsx_c_scale,w_1400.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+carousel-2_gayro2_c_scale,w_200.webp 200w,
+carousel-2_gayro2_c_scale,w_800.webp 800w,
+carousel-2_gayro2_c_scale,w_1200.webp 1200w,
+carousel-2_gayro2_c_scale,w_1400.webp 1400w"
+src="carousel-2_gayro2_c_scale,w_1400.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 393px) 100vw, 393px"
+srcset="
+chandrakant_pdy0lz_c_scale,w_200.webp 200w,
+chandrakant_pdy0lz_c_scale,w_393.webp 393w"
+src="chandrakant_pdy0lz_c_scale,w_393.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 801px) 100vw, 801px"
+srcset="
+contact_dfb4b2_c_scale,w_200.webp 200w,
+contact_dfb4b2_c_scale,w_468.webp 468w,
+contact_dfb4b2_c_scale,w_657.webp 657w,
+contact_dfb4b2_c_scale,w_801.webp 801w"
+src="contact_dfb4b2_c_scale,w_801.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 800px) 100vw, 800px"
+srcset="
+feature_ib0mdp_c_scale,w_200.webp 200w,
+feature_ib0mdp_c_scale,w_541.webp 541w,
+feature_ib0mdp_c_scale,w_800.webp 800w"
+src="feature_ib0mdp_c_scale,w_800.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+group_qqg3tw_c_scale,w_200.webp 200w,
+group_qqg3tw_c_scale,w_710.webp 710w,
+group_qqg3tw_c_scale,w_1176.webp 1176w,
+group_qqg3tw_c_scale,w_1400.webp 1400w"
+src="group_qqg3tw_c_scale,w_1400.webp"
+alt="">
+</picture>
+
+
+<picture>
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+group2_necoeq_c_scale,w_200.webp 200w,
+group2_necoeq_c_scale,w_513.webp 513w,
+group2_necoeq_c_scale,w_798.webp 798w,
+group2_necoeq_c_scale,w_972.webp 972w,
+group2_necoeq_c_scale,w_1166.webp 1166w,
+group2_necoeq_c_scale,w_1400.webp 1400w"
+src="group2_necoeq_c_scale,w_1400.webp"
+alt="">
+</picture>
+
+
+<picture>
+<img
+sizes="(max-width: 499px) 100vw, 499px"
+srcset="
+haris_cdscmf_c_scale,w_200.webp 200w,
+haris_cdscmf_c_scale,w_499.webp 499w"
+src="haris_cdscmf_c_scale,w_499.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+lapi_s3qmi2_c_scale,w_200.webp 200w,
+lapi_s3qmi2_c_scale,w_768.webp 768w,
+lapi_s3qmi2_c_scale,w_1218.webp 1218w,
+lapi_s3qmi2_c_scale,w_1400.webp 1400w"
+src="lapi_s3qmi2_c_scale,w_1400.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 499px) 100vw, 499px"
+srcset="
+madhurima_rptvwk_c_scale,w_200.webp 200w,
+madhurima_rptvwk_c_scale,w_499.webp 499w"
+src="madhurima_rptvwk_c_scale,w_499.webp"
+alt="">
+</picture>
+
+
+<picture>
+<img
+sizes="(max-width: 1280px) 100vw, 1280px"
+srcset="
+madhurima2_ip1ksd_c_scale,w_200.webp 200w,
+madhurima2_ip1ksd_c_scale,w_729.webp 729w,
+madhurima2_ip1ksd_c_scale,w_1280.webp 1280w"
+src="madhurima2_ip1ksd_c_scale,w_1280.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 212px) 100vw, 212px"
+srcset="
+pooja_dveanq_c_scale,w_212.webp 212w"
+src="pooja_dveanq_c_scale,w_212.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 1366px) 100vw, 1366px"
+srcset="
+services_vhog4t_c_scale,w_200.webp 200w,
+services_vhog4t_c_scale,w_1054.webp 1054w,
+services_vhog4t_c_scale,w_1366.webp 1366w"
+src="services_vhog4t_c_scale,w_1366.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+shrikant_fu04ie_c_scale,w_200.webp 200w,
+shrikant_fu04ie_c_scale,w_542.webp 542w,
+shrikant_fu04ie_c_scale,w_762.webp 762w,
+shrikant_fu04ie_c_scale,w_1034.webp 1034w,
+shrikant_fu04ie_c_scale,w_1182.webp 1182w,
+shrikant_fu04ie_c_scale,w_1346.webp 1346w,
+shrikant_fu04ie_c_scale,w_1400.webp 1400w"
+src="shrikant_fu04ie_c_scale,w_1400.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 500px) 100vw, 500px"
+srcset="
+team-1_w5ytqb_c_scale,w_200.webp 200w,
+team-1_w5ytqb_c_scale,w_500.webp 500w"
+src="team-1_w5ytqb_c_scale,w_500.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 500px) 100vw, 500px"
+srcset="
+team-2_krsptx_c_scale,w_200.webp 200w,
+team-2_krsptx_c_scale,w_500.webp 500w"
+src="team-2_krsptx_c_scale,w_500.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 500px) 100vw, 500px"
+srcset="
+team-3_ja7sre_c_scale,w_200.webp 200w,
+team-3_ja7sre_c_scale,w_500.webp 500w"
+src="team-3_ja7sre_c_scale,w_500.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 100px) 100vw, 100px"
+srcset="
+testimonial-1_pr3y6s_c_scale,w_100.webp 100w"
+src="testimonial-1_pr3y6s_c_scale,w_100.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 100px) 100vw, 100px"
+srcset="
+testimonial-2_tdylm8_c_scale,w_100.webp 100w"
+src="testimonial-2_tdylm8_c_scale,w_100.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 100px) 100vw, 100px"
+srcset="
+testimonial-3_i3ezzl_c_scale,w_100.webp 100w"
+src="testimonial-3_i3ezzl_c_scale,w_100.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 100px) 100vw, 100px"
+srcset="
+testimonial-4_gggo2z_c_scale,w_100.webp 100w"
+src="testimonial-4_gggo2z_c_scale,w_100.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 499px) 100vw, 499px"
+srcset="
+tushar_wfzqzg_c_scale,w_200.webp 200w,
+tushar_wfzqzg_c_scale,w_499.webp 499w"
+src="tushar_wfzqzg_c_scale,w_499.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+us_xtv274_c_scale,w_200.webp 200w,
+us_xtv274_c_scale,w_1400.webp 1400w"
+src="us_xtv274_c_scale,w_1400.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 100px) 100vw, 100px"
+srcset="
+user_i4bc5h_c_scale,w_100.webp 100w"
+src="user_i4bc5h_c_scale,w_100.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 499px) 100vw, 499px"
+srcset="
+vnit_mn3oso_c_scale,w_200.webp 200w,
+vnit_mn3oso_c_scale,w_484.webp 484w,
+vnit_mn3oso_c_scale,w_499.webp 499w"
+src="vnit_mn3oso_c_scale,w_499.webp"
+alt="">
+</picture>
+
+<picture>
+<img
+sizes="(max-width: 613px) 100vw, 613px"
+srcset="
+working2_ia5coj_c_scale,w_200.webp 200w,
+working2_ia5coj_c_scale,w_576.webp 576w,
+working2_ia5coj_c_scale,w_613.webp 613w"
+src="working2_ia5coj_c_scale,w_613.webp"
+alt="">
+</picture>
