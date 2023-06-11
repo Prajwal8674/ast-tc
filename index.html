@@ -54,6 +54,9 @@
             </div>
             <div class="col-lg-4 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <button onclick="darkTheme()" class="btn btn-sm  me-5">
+                        <img src="img/darkTheme.webp" height="25px" width="25px" class=""></img>    
+                        </button>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://twitter.com/AsteriscI"><i class="fab fa-twitter fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/technocrat.asterisc"><i class="fab fa-facebook-f fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/in/asterisc-computer-705522198/"><i class="fab fa-linkedin-in fw-normal"></i></a>
@@ -869,6 +872,18 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      
+      <!--for dark mode-->
+      
+       <script>
+        function darkTheme() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+           if(document.body.contains("dark-mode")){
+
+           }
+        }
+        </script>  
 </body>
 
 </html>
