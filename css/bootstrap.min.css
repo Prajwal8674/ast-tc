@@ -3203,7 +3203,7 @@ textarea.form-control-lg {
   background-color: #000 !important;
 }
 .bg-light {
-  background-color: #fff3ff !important;
+  background-color: #ffe8ff !important;
 }
 .bg-dark {
   background-color: purple !important;
@@ -4800,7 +4800,6 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 
-
   .dark-mode{  
     
     margin: 0;
@@ -4813,4 +4812,5 @@ textarea.form-control-lg {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
+
 }
