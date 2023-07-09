@@ -34,6 +34,40 @@
         .bg-darks {
   background-color: #191919 !important;
 }
+.news {
+  width: 100%;
+  background: #fff;
+  border: solid 2px #800080;
+}
+.news-title {
+  width: 90px;
+  text-align: center;
+ 
+  background: #5c0a5c;
+  position: absolute;
+  z-index: 10;
+  height: 60px;
+}
+.news-title:after {
+  position: absolute;
+  content: "";
+  right: -39px;
+  top: 0px;
+}
+.news-title h5 {
+  font-size: 17px;
+  margin: 8% 0;
+  color: #fff;
+}
+.news marquee {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.news-content p {
+  margin-right: 41px;
+  display: inline;
+  color: #222;
+}
 
     </style>
 
@@ -294,8 +328,7 @@
                 <div class="col-lg-4">
                     <div class="row g-5">
                         <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                            <div class="bg-prim
-                            ary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                                 <i class="fa fa-users-cog text-white"></i>
                             </div>
                             <h4>Professional Staff</h4>
@@ -508,8 +541,20 @@
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h5 >Call to ask any question</h5>
                             <h4 class="" ><a id="mailme" href="tel:91-7744822228">+91-7744822228</a></h4>
+                        </div>
+                    </div>
+                    <div style="padding-top: 18px;">
+                        <div class="ticker">
+                            <div class="news-title">
+                                <h4 style="padding-top: 18px;  color: white;">Alert !</h4>
+                            </div>
+                            <div class="bg-light news">
+                                <marquee class="news-content">
+                                    <h4>Registration is closed for the Internship Please don't request quote for Internship Inquiry, Thank You !  </h4>
+                                </marquee>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -801,7 +846,9 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="col-lg-4 col-md-1
+                        
+                        2 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Quick Links</h3>
                             </div>
