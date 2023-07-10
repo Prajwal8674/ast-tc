@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Description</title>
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .job-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .job-location {
+      font-style: italic;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .job-description {
+      margin-top: 10px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .section-content {
+      margin-bottom: 10px;
+    }
+
+    .apply-form {
+      margin-top: 20px;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .form-submit {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Job Description</h1>
+  </div>
+
+  <div class="container">
+    <h2 class="job-title">Software Engineer</h2>
+    <p class="job-location">Location: Nagpur, IN</p>
+
+    <div class="section">
+      <h3 class="section-title">Responsibilities:</h3>
+      <p class="section-content">- List of responsibilities goes here</p>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title">Requirements:</h3>
+      <p class="section-content">- List of requirements goes here</p>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title">Skill Set (Must Have):</h3>
+      <p class="section-content">- List of must-have skills goes here</p>
+    </div>
+
+    <form class="apply-form" action="submit-application.html" method="POST">
+      <label class="form-label" for="name">Name:</label>
+      <input class="form-input" type="text" id="name" name="name" required>
+
+      <label class="form-label" for="email">Email:</label>
+      <input class="form-input" type="email" id="email" name="email" required>
+
+      <label class="form-label" for="resume">Resume:</label>
+      <input class="form-input" type="file" id="resume" name="resume" required>
+
+      <input class="form-submit" type="submit" value="Submit Application">
+    </form>
+  </div>
+</body>
+</html>
