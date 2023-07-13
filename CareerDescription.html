@@ -35,7 +35,26 @@
   background-color: #191919 !important;
 }
     </style>
-
+ <style>
+    .panel {
+      background-color: #ffffff;
+      border: 2px solid #800080;
+      border-radius: 4px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .panel-header {
+      background-color: #ffe8ff;
+      color: #5c0a5c;
+      padding: 5px;
+      border-radius: 4px 4px 0 0;
+    }
+    
+    .panel-body {
+      padding: 10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -114,6 +133,7 @@
 
 
     <!-- Full Screen Search Start -->
+    
     <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
@@ -186,7 +206,12 @@
             </div>
         </div>
     </div>
-    
+    <div class="panel">
+        <div class="panel-header">Job Description</div>
+        <div class="panel-body">
+          This is the content of the panel.
+        </div>
+      </div>
     <div class="row gx-5">
         <h2 class="job-title" style="text-align: center;">Software Engineer</h2>
         <p class="job-location"style="text-align: center;">Location: Nagpur, IN</p>
