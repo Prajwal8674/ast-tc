@@ -35,24 +35,40 @@
   background-color: #191919 !important;
 }
     </style>
- <style>
+  
+      <style>
+        .g-5,
+        .gx-55 {
+  --bs-gutter-x: -6rem;
+}
+
     .panel {
-      background-color: #ffffff;
-      border: 2px solid #800080;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
       border-radius: 4px;
       padding: 10px;
       margin-bottom: 10px;
     }
     
     .panel-header {
-      background-color: #ffe8ff;
-      color: #5c0a5c;
+      background-color: #ccc;
+      color: #fff;
       padding: 5px;
       border-radius: 4px 4px 0 0;
     }
     
     .panel-body {
       padding: 10px;
+    }
+    
+    .responsive-image {
+      max-width: 42%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    .photo-column {
+      text-align:center;
     }
   </style>
 </head>
@@ -131,121 +147,30 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Full Screen Search Start -->
+    <div class="row gx-55">
+        <div class="col-lg-4 col-md-12  photo-column">
+            <img src="img/technocrat.png" alt="Your Photo" class="responsive-image">
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row gx-5">
+                        <h2 class="job-title" style="text-align: center;">Software Engineer</h2>
+                        <p class="job-location" style="text-align: center;">Location: Nagpur, IN</p>
     
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                      
+    
+                        <div style="text-align: center;">
+                            <form class="" action="submit-application.html" method="Mail">
+                                <a href="CareerDescription.html" class="btn btn-success" style="width:150px"><span>Read More</span></a>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Full Screen Search End -->
-      <!-- Facts Start -->
-      <div class="container-fluid facts py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-               
-                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 100px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0"style="width: 167px;">Our Customers</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">70</h1>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 100px;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        
-                        <div class="ps-4">
-                            <h5 class="text-primary mb-0"style="width: 167px;">Happy clients</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">100</h1>
-                        </div>
-                    </div>
-                </div>
     
-                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 100px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0"style="width: 167px;">Projects Complete</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">50</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 100px;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-primary mb-0"style="width: 167px;">Cofee with clients</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">250</h1>
-                        </div>
-                    </div>
-                </div>
-             
-            </div>
-        </div>
-    </div>
-    <div class="panel">
-        <div class="panel-header">Job Description</div>
-        <div class="panel-body">
-          This is the content of the panel.
-        </div>
-      </div>
-    <div class="row gx-5">
-        <h2 class="job-title" style="text-align: center;">Software Engineer</h2>
-        <p class="job-location"style="text-align: center;">Location: Nagpur, IN</p>
-    
-        <div class="col-lg-4 col-md-12 pt-5 mb-5"style="text-align: center;">
-            <h3 class="">Responsibilities:</h3>
-          <p class="">- Develop efficient and performant application code for java programs.</p>
-          <p class="">- To take part in software and architectural development activities</p>
-          <p class="">- Conduct software analysis, programming, testing and debugging</p>
-        </div>
-    
-        <div class="col-lg-4 col-md-12 pt-5 mb-5"style="text-align: center;">
-            <h3 class="">Requirements:</h3>
-          <p class="">- Ability to understand, design and support custom frameworks in Java and JavaScript</p>
-          <p class="">- Good with databases, SQL level, ORM and large volume data handling in RDBMS</p>
-          <p class="">- Fluent in English, must be able to handle client communication and calls</p>
-        </div>
-    
-        <div class="col-lg-4 col-md-12 pt-5 mb-5"style="text-align: center;">
-          <h3 class="">Skill Set (Must Have):</h3>
-          <p class="">- </p>
-          <p class="">- JAVA</p>
-          <p class="">- J2EE</p>
-          <p class="">- MVC</p>
-          <p class="">- mySQL</p>
-        </div>
-    
-        <form class="" action="submit-application.html" method="Mail">
-            <div style="text-align: center;">
-          <a href="CareerDescription.html" class="btn btn-success"embed style="width:150px"><span>Read More</span></a>
-            </div>
-        </form>
-      </div>
-    <!-- Facts end -->
     <div class="container-fluid py-5 wow fadeInUp" >
     </div>
 
