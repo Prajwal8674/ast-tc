@@ -264,7 +264,6 @@
                     <div class="text-center py-4">
                         <h4 class="text-primary">certificates</h4>
                         <p class=" m-0">The certificate of Asterisc Technocrat pvt. ltd. As you hold this certificate in your hands, remember the countless hours of effort you invested, the challenges you overcame, and the skills you honed.
-
                         </p>
                     </div>
                 </div>
@@ -274,50 +273,90 @@
 </div>
 <!--goodies end-->
 
-<!--steps start-->
-<h3 class=" text-center fw-bold text-primary text-uppercase" style="margin-top: 40px;margin-bottom: 10px;">Steps you have to follow</h3>
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto"style="margin-bottom: 10px;"></div>
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="img/steps/step1.webp" class="card-img-top" alt="Twitter Icon">
-              <div class="card-body">
-                    <h5 class="card-title "style="text-align: center;">Follow On Social Media</h5>
-                    <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary btn-square me-2" href="https://twitter.com/AsteriscI"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/technocrat.asterisc"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/in/asterisc-computer-705522198/"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://www.instagram.com/asterisc.in/"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-primary brn-square" href="https://github.com/chandrakant22"><i class="fab fa-github fw-normal"></i></a>
-                    </div>
-                 </div>
-            </div>
+<!-- First set of steps -->
+<h3 class="text-center fw-bold text-primary text-uppercase" style="margin-top: 40px; margin-bottom: 10px;">Steps you have to follow</h3>
+<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="margin-bottom: 10px;"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card">
+        <img src="img/steps/step1.webp" class="card-img-top" alt="Twitter Icon">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Follow On Social Media</h5>
+          <div class="d-flex justify-content-center">
+            <a class="btn btn-primary btn-square me-2" href="https://twitter.com/AsteriscI" target="_blank" onclick="linkClicked(event, 'twitter')"><i class="fab fa-twitter fw-normal"></i></a>
+            <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/technocrat.asterisc" target="_blank" onclick="linkClicked(event, 'facebook')"><i class="fab fa-facebook-f fw-normal"></i></a>
+            <a class="btn btn-primary btn-square me-2" href="https://www.linkedin.com/in/asterisc-computer-705522198/" target="_blank" onclick="linkClicked(event, 'linkedin')"><i class="fab fa-linkedin-in fw-normal"></i></a>
+            <a class="btn btn-primary btn-square me-2" href="https://www.instagram.com/asterisc.in/" target="_blank" onclick="linkClicked(event, 'instagram')"><i class="fab fa-instagram fw-normal"></i></a>
+            <a class="btn btn-primary brn-square" href="https://github.com/chandrakant22" target="_blank" onclick="linkClicked(event, 'github')"><i class="fab fa-github fw-normal"></i></a>
           </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="img/steps/step2.webp" class="card-img-top" alt="Facebook Icon">
-              <div class="card-body">
-                <h5 class="card-title"style="text-align: center;">Create an internship review video</h5>
-                <div style="text-align: center;">
-                    <a href="https://asterisc.in/" target="_blank" class="btn btn-success"embed style="width:200px;width:200px"><span>Upload</span></a>
-                 </div>              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="img/steps/step3.webp" class="card-img-top" alt="LinkedIn Icon">
-              <div class="card-body">
-                <h5 class="card-title" style="text-align: center;"> Subscribe Youtube Channel</h5>
-                <div style="text-align: center;">
-                    <a href="https://www.youtube.com/channel/UC874req7IgQzGOZ1MfTMlVA" target="_blank" class="btn btn-success"embed style="width:200px;width:200px"><i class="fab fa-youtube fw-normal"></i>&nbsp;<span>Subscribe</span></a>
-                 </div> 
-              </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div id="second-steps" style="display: none;">
+        <div class="card">
+          <img src="img/steps/step2.webp" class="card-img-top" alt="Facebook Icon">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Subscribe to the YouTube Channel</h5>
+            <div style="text-align: center;">
+              <a href="https://www.youtube.com/channel/UC874req7IgQzGOZ1MfTMlVA" target="_blank" class="btn btn-success" id="subscribeBtn" style="width: 200px;"><i class="fab fa-youtube fw-normal"></i>&nbsp;<span>Subscribe</span></a>
             </div>
           </div>
         </div>
       </div>
-<!--steps end-->
+    </div>
+    <div class="col-lg-4">
+      <div id="third-steps" style="display: none;">
+        <div class="card">
+          <img src="img/steps/step3.webp" class="card-img-top" alt="LinkedIn Icon">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Create an internship review video</h5>
+            <div style="text-align: center;">
+              <a href="https://asterisc.in/" target="_blank" class="btn btn-success" style="width: 200px;"><span>Upload</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var openedLinks = 0; // Counter for opened links
+
+  // Function to show the second and third steps
+  function showSecondSteps() {
+    document.getElementById('second-steps').style.display = 'block';
+    if (openedLinks === 5) {
+      document.getElementById('third-steps').style.display = 'block';
+    }
+  }
+
+  // Function to hide the second and third steps
+  function hideSecondSteps() {
+    document.getElementById('second-steps').style.display = 'none';
+    document.getElementById('third-steps').style.display = 'none';
+  }
+
+  // Function to handle link clicks and count opened links
+  function linkClicked(event, type) {
+    var linkBtn = event.currentTarget; // Get the clicked link button
+
+    if (!linkBtn.classList.contains('active')) {
+      linkBtn.classList.add('active');
+      linkBtn.innerHTML = '<i class="fas fa-check"></i>'; // Change the icon to a checkmark
+      openedLinks++; // Increment the opened links counter
+    }
+
+    if (openedLinks >= 5) {
+      showSecondSteps(); // If all links are opened, display the second set of steps
+    } else {
+      hideSecondSteps(); // Otherwise, hide the second and third steps
+    }
+  }
+</script>
+
 
     <div class="container-fluid bgs text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
