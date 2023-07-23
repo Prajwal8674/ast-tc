@@ -71,7 +71,40 @@
       color: #555;
     }
   </style>
-  
+    <style>
+        /* Styles for the popup */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          padding-top: 100px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+      
+        .modal-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          max-width: 400px;
+          text-align: center;
+        }
+      
+        .close {
+          position: absolute;
+          top: 0;
+          right: 15px;
+          font-size: 28px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      </style>
+      
   
 </head>
 
@@ -273,7 +306,6 @@
     </div>
 </div>
 <!--goodies end-->
-
 <!-- First set of steps -->
 <h3 class="text-center fw-bold text-primary text-uppercase" style="margin-top: 40px; margin-bottom: 10px;">Steps you have to follow</h3>
 <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="margin-bottom: 10px;"></div>
@@ -293,6 +325,9 @@
           </div>
         </div>
       </div>
+      <div style="text-align: center;">
+        <a href="#" id="step1-next-btn" class="btn btn-success" embed style="width:150px" onclick="showPopup()"><span>next Step</span></a>
+      </div>
     </div>
     <div class="col-lg-4">
       <div id="second-steps" style="display: none;">
@@ -304,6 +339,9 @@
               <a href="https://www.youtube.com/channel/UC874req7IgQzGOZ1MfTMlVA" target="_blank" class="btn btn-success" id="subscribeBtn" style="width: 200px;" onclick="subscribeClicked(event)"><i class="fab fa-youtube fw-normal"></i>&nbsp;<span>Subscribe</span></a>
             </div>
           </div>
+        </div>
+        <div style="text-align: center;">
+          <a href="" class="btn btn-success"embed style="width:150px"><span>next Step</span></a>
         </div>
       </div>
     </div>
@@ -323,48 +361,121 @@
   </div>
 </div>
 
+<!-- Popup Modal -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="hidePopup()">&times;</span>
+    <div id="step1-content" style="display: block;">
+      <!-- Content of the complete first step -->
+      <h2>Step 1</h2>
+      <p>This is the content of the complete first step. Add your content here.</p>
+    </div>
+    <div id="step2-content" style="display: none;">
+      <!-- Content of the complete second step -->
+      <h2>Step 2</h2>
+      <p>This is the content of the complete second step. Add your content here.</p>
+    </div>
+    <div id="step3-content" style="display: none;">
+      <!-- Content of the complete third step -->
+      <h2>Step 3</h2>
+      <p>This is the content of the complete third step. Add your content here.</p>
+    </div>
+    <a href="#" class="btn btn-success" embed style="width: 150px;" onclick="hidePopup(); showNextStep();"><span>Next Step</span></a>
+  </div>
+</div>
+  <!-- Add the JavaScript code here -->
 <script>
-  var openedLinks = 0; // Counter for opened links
-
-  // Function to show the second step
-  function showSecondStep() {
-    document.getElementById('second-steps').style.display = 'block';
-  }
-
-  // Function to show the third step
-  function showThirdStep() {
-    document.getElementById('third-steps').style.display = 'block';
-  }
-
-  // Function to hide the third step
-  function hideThirdStep() {
-    document.getElementById('third-steps').style.display = 'none';
-  }
-
-  // Function to handle link clicks and count opened links
-  function linkClicked(event, type) {
-    var linkBtn = event.currentTarget; // Get the clicked link button
-
-    if (!linkBtn.classList.contains('active')) {
-      linkBtn.classList.add('active');
-      linkBtn.innerHTML = '<i class="fas fa-check"></i>'; // Change the icon to a checkmark
-      openedLinks++; // Increment the opened links counter
+    var openedLinks = 0; // Counter for opened links
+  
+    // Function to show the popup
+    function showPopup() {
+      document.getElementById('popupModal').style.display = 'block';
     }
-
-    if (openedLinks >= 5) {
-      showSecondStep(); // If all links are opened, display the second step
-    } else {
-      hideThirdStep(); // Otherwise, hide the third step
+  
+    // Function to hide the popup
+    function hidePopup() {
+      document.getElementById('popupModal').style.display = 'none';
     }
-  }
+  
+    // Function to show the second step
+    function showSecondStep() {
+      document.getElementById('second-steps').style.display = 'block';
+      document.getElementById('step1-next-btn').style.display = 'none'; // Hide the "next Step" button of the first step
+    }
+  
+    // Function to show the third step
+    function showThirdStep() {
+      document.getElementById('third-steps').style.display = 'block';
+    }
+  
+    // Function to hide the third step
+    function hideThirdStep() {
+      document.getElementById('third-steps').style.display = 'none';
+    }
+  
+    // Function to handle link clicks and count opened links
+    function linkClicked(event, type) {
+      var linkBtn = event.currentTarget; // Get the clicked link button
+  
+      if (!linkBtn.classList.contains('active')) {
+        linkBtn.classList.add('active');
+        linkBtn.innerHTML = '<i class="fas fa-check"></i>'; // Change the icon to a checkmark
+        openedLinks++; // Increment the opened links counter
+      }
+  
+      if (openedLinks >= 5) {
+        showSecondStep(); // If all links are opened, display the second step
+      } else {
+        hideThirdStep(); // Otherwise, hide the third step
+      }
+    }
+  
+    // Function to handle Subscribe button click
+    function subscribeClicked(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+      showThirdStep(); // Show the third step
+      window.open("https://www.youtube.com/channel/UC874req7IgQzGOZ1MfTMlVA", "_blank"); // Open the YouTube URL in a new tab
+    }
+  </script>
 
-  // Function to handle Subscribe button click
-  function subscribeClicked(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    showThirdStep(); // Show the third step
-    window.open("https://www.youtube.com/channel/UC874req7IgQzGOZ1MfTMlVA", "_blank"); // Open the YouTube URL in a new tab
-  }
-</script>
+<script>
+    // ... (previous JavaScript functions and variables) ...
+  
+    // Function to show the content of the current step in the popup
+    function showCurrentStepContent() {
+      var step1Content = document.getElementById('step1-content');
+      var step2Content = document.getElementById('step2-content');
+      var step3Content = document.getElementById('step3-content');
+  
+      // Hide all step contents
+      step1Content.style.display = 'none';
+      step2Content.style.display = 'none';
+      step3Content.style.display = 'none';
+  
+      // Show the content of the current step
+      if (currentStep === 1) {
+        step1Content.style.display = 'block';
+      } else if (currentStep === 2) {
+        step2Content.style.display = 'block';
+      } else if (currentStep === 3) {
+        step3Content.style.display = 'block';
+      }
+    }
+  
+    // Function to show the next step content in the popup
+    function showNextStep() {
+      currentStep++;
+      if (currentStep <= 3) {
+        showCurrentStepContent();
+      } else {
+        // If all steps are completed, close the popup
+        hidePopup();
+        showSecondStep(); // Show the second step after completing the first step
+      }
+    }
+  </script>
+  
+    
 
 
     <div class="container-fluid bgs text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
