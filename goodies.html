@@ -30,6 +30,8 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" defer="true"></script>
+
+    
     <style>
         .bg-darks {
             background-color: #191919 !important;
@@ -70,42 +72,52 @@
       font-size: 16px;
       color: #555;
     }
-  </style>
-    <style>
-        /* Styles for the popup */
-        .modal {
-          display: none;
-          position: fixed;
-          z-index: 1;
-          padding-top: 100px;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: rgba(0, 0, 0, 0.4);
-        }
-      
-        .modal-content {
-          background-color: #fefefe;
-          margin: auto;
-          padding: 20px;
-          border: 1px solid #888;
-          max-width: 400px;
-          text-align: center;
-        }
-      
-        .close {
-          position: absolute;
-          top: 0;
-          right: 15px;
-          font-size: 28px;
-          font-weight: bold;
-          cursor: pointer;
-        }
-      </style>
-      
-  
+  </style><style>
+  /* Styles for the popup */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    bottom: 0; /* Position the popup at the bottom */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* Add this style to prevent body scrolling when the popup is open */
+  body.modal-open {
+    overflow: hidden;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
 </head>
 
 <body>
@@ -371,29 +383,39 @@
 <!-- Popup Modal -->
 <div id="popupModal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="hidePopup()">&times;</span>
+      <span class="" ></span>
       <div id="step1-content" style="display: none;">
         <!-- Content of the complete first step -->
         <h2>Step 1</h2>
         <p>Complete The Step 1 properly ! </p>
+        <div style="text-align: center;">
+            <a href="" id=""class="btn btn-success" class="close" embed style="width:150px" onclick="hidePopup()"><span>close</span></a>
+          </div>
        
       </div>
       <div id="step2-content" style="display: none;">
         <!-- Content of the complete second step -->
         <h2>Step 2</h2>
-        <p>Subscribe the youtube chsnnel first </p>
+        <p>Subscribe the youtube channel first </p>
+        <div style="text-align: center;">
+            <a href="" id=""class="btn btn-success" embed style="width:150px" onclick="hidePopup()"><span>close</span></a>
+          </div>
       </div>
       <div id="step3-content" style="display: none;">
         <!-- Content of the complete third step -->
         <h2>Step 3</h2>
-        <p>This is the content of the complete third step. Add your content here.</p>
+        <p>You are all complete</p>
+        <div style="text-align: center;">
+            <a href="#" id="step3-next-btn"class="btn btn-success" embed style="width:150px" onclick="showPopup(3)"><span>Close</span></a>
+          </div>
       </div>
     </div>
   </div>
 <script>
     var openedLinks = 0; 
   
-    function showPopup() {
+  // JavaScript code to show/hide the popup
+  function showPopup() {
     document.getElementById("popupModal").style.display = "block";
     document.body.classList.add("modal-open"); // Prevent body scroll
   }
@@ -402,6 +424,13 @@
     document.getElementById("popupModal").style.display = "none";
     document.body.classList.remove("modal-open"); // Enable body scroll
   }
+
+  // Add event listener to close the popup when clicking outside the content
+  window.onclick = function (event) {
+    if (event.target === document.getElementById("popupModal")) {
+      hidePopup();
+    }
+  };
   
     function showSecondStep() {
       document.getElementById('second-steps').style.display = 'block';
@@ -491,7 +520,7 @@
       }
     }
 </script>
-  
+    
     <div class="container-fluid bgs text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
