@@ -33,16 +33,25 @@
 
     
     <style>
+        /* .bg-header-1 {
+  background: linear-gradient(rgba(51, 26, 67, 0.7), rgba(44, 20, 102, 0.7)),
+    url(../img/goodiesMain.jpg) center center no-repeat;
+  background-size: cover;
+} */
         .bg-darks {
             background-color: #191919 !important;
         }
 
         .h-100 {
-            height: 94% !important;
+            height: 80% !important;
         }
+        .w-91 {
+           width: 91% !important;
+           }
     </style>
 
 <style>
+
     .card {
       border: 1px solid #ccc;
       border-radius: 8px;
@@ -116,6 +125,17 @@
     padding: 20px;
     text-align: center;
   }
+.glow-image {
+    transition: filter 0.5s ease;
+}
+
+.glow-image:hover {
+    filter: drop-shadow(0 0 10px #800080); 
+}
+
+
+
+
 </style>
 
 </head>
@@ -219,7 +239,7 @@
             <div class="row g-5">
                 <div class="col-lg-7">
                     <div class="se ction-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">Earn Goodies</h5>
+                        <h1 class="fw-bold text-primary text-uppercase">Earn Goodies</h1>
                         <h2 class="mb-0">Swag opportunities for Interns 😎</h2>
                         <h3 class="mb-0">As a developer, nothing prestigious than developer swag! 🚀</h3>
                     </div>
@@ -233,9 +253,12 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/goodies/goodies.webp" style="object-fit: cover; margin-top: -10px;">
+                        <img class="glow-image position-absolute w-91 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/goodies/goodies.png" style="object-fit: cover; margin-top: -10px;">
                     </div>
                 </div>
+                
+                
+                
             </div>
         </div>
     </div>
